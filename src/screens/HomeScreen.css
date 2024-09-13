@@ -1,0 +1,165 @@
+/* General Styles for Both Themes */
+body, html {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+    box-sizing: border-box;
+  }
+  
+  /* Container for the App */
+  .app-container {
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+    transition: background-color 0.3s ease, color 0.3s ease;
+  }
+  
+  /* Header */
+  .header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    max-width: 800px;
+    padding: 15px 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    margin-bottom: 20px;
+  }
+  
+  /* Toggle Button */
+  .theme-toggle {
+    padding: 10px 15px;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: background-color 0.3s ease, color 0.3s ease, transform 0.2s ease;
+    border: 2px solid;
+  }
+  
+  .theme-toggle:hover {
+    transform: scale(1.05);
+  }
+  
+  /* Form Styling */
+  .form {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    max-width: 400px;
+    background-color: rgba(255, 255, 255, 0.1);
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+  }
+  
+  /* Form Inputs */
+  input, select {
+    padding: 10px;
+    margin: 10px 0;
+    border: 1px solid;
+    border-radius: 5px;
+    width: 100%;
+    box-sizing: border-box;
+    transition: background-color 0.3s ease, color 0.3s ease, border 0.3s ease;
+  }
+  
+  input:focus, select:focus {
+    outline: none;
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.2);
+  }
+  
+  /* Submit Button */
+  .submit-button {
+    background-color: blue;
+    color: white;
+    padding: 12px 20px;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+  }
+  
+  .submit-button:hover {
+    background-color: darkblue;
+    transform: scale(1.05);
+  }
+  
+  /* BMI Result */
+  .bmi-result {
+    margin-top: 20px;
+    font-size: 1.5em;
+  }
+  
+  /* Light Mode */
+  .app-container.light {
+    background-color: white;
+    color: blue;
+  }
+  
+  .header.light {
+    background-color: blue;
+    color: white;
+  }
+  
+  .theme-toggle.light {
+    background-color: white;
+    color: blue;
+    border-color: blue;
+  }
+  
+  .form.light {
+    background-color: white;
+    color: blue;
+  }
+  
+  input.light, select.light {
+    background-color: white;
+    color: blue;
+    border-color: blue;
+  }
+  
+  .submit-button.light {
+    background-color: blue;
+    color: white;
+  }
+  
+  /* Dark Mode */
+  .app-container.dark {
+    background-color: black;
+    color: green;
+  }
+  
+  .header.dark {
+    background-color: green;
+    color: black;
+  }
+  
+  .theme-toggle.dark {
+    background-color: black;
+    color: green;
+    border-color: green;
+  }
+  
+  .form.dark {
+    background-color: #333;
+    color: green;
+  }
+  
+  input.dark, select.dark {
+    background-color: black;
+    color: green;
+    border-color: green;
+  }
+  
+  .submit-button.dark {
+    background-color: green;
+    color: black;
+  }
+  
+  .bmi-result.dark {
+    color: green;
+  }
+  
